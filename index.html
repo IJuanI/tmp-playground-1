@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After 10</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <script src="./index.js"></script>
+    <script src="./segundo.js"></script>
+    <script src="./stock.js"></script>
+    <button onclick="addItem()">Buscar producto</button>
+    <header>
+        <h1 id="titulo" class="titulo">After Eventos</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </header>
+
+    <selection id="filtroTalle">
+        <option value="all">Todos</option>
+        <option value="L">Large</option>
+        <option value="M">Medium</option>
+        <option value="S">Small</option>
+    </selection>
+
+
+    <main id="contenedor-productos">
+
+    </main>
+
+    <div class="segundo">
+        <div class="segundo-carrito">
+            <h3>Carrito</h3>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+</body>
+</html>
