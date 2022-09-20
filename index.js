@@ -20,7 +20,7 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
-stockProductos.forEach((producto) => {
+carrito.forEach((producto) => {
     botonVaciar.addEventListener('click', () => {
         carrito.length = 0
         actualizarCarrito()
@@ -57,7 +57,6 @@ const agregarAlCarrito = (prodId) => {
     carrito.push(item)
     console.log(carrito)
 }
-actualizarCarrito()
 
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)
@@ -85,3 +84,4 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
+actualizarCarrito() 
